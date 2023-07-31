@@ -4,7 +4,7 @@ import { paginate } from 'blitz'
 import { IProduct } from 'src/types'
 
 interface GetUsersInput
-  extends Pick<Prisma.UserFindManyArgs, 'where' | 'orderBy' | 'skip' | 'take'> {}
+  extends Pick<Prisma.Product_variableFindManyArgs, 'where' | 'orderBy' | 'skip' | 'take'> {}
 
 export default resolver.pipe(
   // resolver.authorize(),

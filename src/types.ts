@@ -66,7 +66,7 @@ export interface IGPTProduct {
   ]
 }
 
-export interface IProduct extends Product {
+export interface IProduct {
   id: number
   logo?: string
   longdesc?: string
