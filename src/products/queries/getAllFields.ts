@@ -3,7 +3,7 @@ import db, { Prisma } from 'db'
 import { paginate } from 'blitz'
 
 interface GetProductFieldsInput
-  extends Pick<Prisma.UserFindManyArgs, 'orderBy' | 'skip' | 'take'> {}
+  extends Pick<Prisma.Product_variableFindManyArgs, 'orderBy' | 'skip' | 'take'> {}
 
 export default resolver.pipe(
   // resolver.authorize(),

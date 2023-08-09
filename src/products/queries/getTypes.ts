@@ -2,7 +2,7 @@ import { resolver } from '@blitzjs/rpc'
 import db, { Prisma } from 'db'
 import { paginate } from 'blitz'
 interface GetProductTypes
-  extends Pick<Prisma.UserFindManyArgs, 'where' | 'orderBy' | 'skip' | 'take'> {}
+  extends Pick<Prisma.Product_variableFindManyArgs, 'where' | 'orderBy' | 'skip' | 'take'> {}
 
 export default resolver.pipe(
   // resolver.authorize(),

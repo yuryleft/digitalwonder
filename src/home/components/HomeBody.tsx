@@ -25,8 +25,8 @@ const HomeBody = () => {
   const LogoITBastion = '/media/images/landing/it_bastion_logo_3.png'
   const LogoSearchInform = 'media/images/landing/searchInform_logo.svg'
   const LogoGraviton = 'media/images/landing/gravitongreylogo.svg'
-  const LogoRDW = 'media/images/landing/rdw_logo.svg'
-  const LogoDepoComp = '/media/images/landing/logo_depo.png'
+  const LogoPositiveTechnologies = 'media/images/landing/positivtechnology.svg'
+  const LogoGKAstra = '/media/images/landing/GKAstra.png'
   const LogoR7Office = '/media/images/landing/r7office_logo.png'
   const [width, height] = useDeviceSize()
 
@@ -91,11 +91,11 @@ const HomeBody = () => {
               </Link>
             </GridItem>
             <GridItem w="100%" h="10">
-              <Link href="https://rdwcomp.ru/">
+              <Link href="https://www.ptsecurity.com/">
                 <Center>
                   <Image
                     w={width! > 800 ? '50%' : '90%'}
-                    src={LogoRDW}
+                    src={LogoPositiveTechnologies}
                     className="img-desaturate"
                     alt=""
                   />
@@ -103,11 +103,11 @@ const HomeBody = () => {
               </Link>
             </GridItem>
             <GridItem w="100%" h="10">
-              <Link href="https://www.depo.ru/">
+              <Link href="https://astralinux.ru/">
                 <Center>
                   <Image
                     w={width! > 800 ? '50%' : '90%'}
-                    src={LogoDepoComp}
+                    src={LogoGKAstra}
                     className="img-desaturate"
                     alt=""
                   />
