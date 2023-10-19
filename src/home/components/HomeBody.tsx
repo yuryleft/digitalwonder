@@ -42,7 +42,7 @@ const HomeBody = () => {
         <Text fontSize={20} color={'#05fe5f'} mb={width! > 800 ? '4' : '8'}>
           Креативная IT компания
         </Text>
-        <Box>
+        {/* <Box>
           <GridItem pl="2" area={'header'} mb={5}>
             <Center fontSize={'24px'} fontWeight={'thin'} color={'#858585'}>
               Ключевые партнеры
@@ -127,7 +127,7 @@ const HomeBody = () => {
               </Link>
             </GridItem>
           </Grid>
-        </Box>
+        </Box> */}
         <Box mb={16}>
           <HStack id="services">
             <Image w={'50%'} src="/media/images/landing/photo.svg" alt=""></Image>
