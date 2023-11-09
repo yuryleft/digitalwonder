@@ -169,25 +169,7 @@ const HomeBody = () => {
             <Image w={'50%'} src="/media/images/landing/photo2.svg" alt=""></Image>
           </HStack>
         </Box>
-        <Box mb={16}>
-          <HStack>
-            <Image w={'50%'} src="/media/images/landing/photo3.svg" alt=""></Image>
-            <Center>
-              <VStack textAlign={'left'}>
-                <Text
-                  fontSize={width! > 800 ? '36px' : '26px'}
-                  fontWeight={'500'}
-                  color={'#00fe5f'}
-                >
-                  БРЕНДИНГ И АЙДЕНТИКА
-                </Text>
-                <Text fontSize={width! > 800 ? '20px' : '16px'} fontWeight={'300'}>
-                  Брендбук. Дизайн-код. Фирменный стиль. Платформа бренда.
-                </Text>
-              </VStack>
-            </Center>
-          </HStack>
-        </Box>
+
         <Box mb={16}>
           <HStack>
             <Center>
@@ -208,15 +190,7 @@ const HomeBody = () => {
             <Image w={'50%'} src="/media/images/landing/BIM.svg" alt=""></Image>
           </HStack>
         </Box>
-        <Box mb={16} textAlign="center">
-          <Text fontSize={width! > 800 ? '36px' : '26px'} fontWeight={'500'} color={'#00fe5f'}>
-            СЕРВИС РАЗРАБОТКИ ЦИФРОВЫХ ПЛАТФОРМ
-          </Text>
-          <Text fontSize={width! > 800 ? '20px' : '16px'} fontWeight={'300'} mb={12}>
-            Мы предлагаем вашему бизнесу полный набор инструментов управления проектами продуктовой
-            разработки
-          </Text>
-        </Box>
+
         <Center id="company">
           <Box mb={16} textAlign="center">
             <Text
