@@ -290,6 +290,34 @@ const PartnersPage: BlitzPage = () => {
               <Box minW={'40%'}>
                 <Img
                   w={'200px'}
+                  src="/media/images/landing/Logo_ASCON.svg"
+                  alt=""
+                  marginLeft={'auto'}
+                  marginRight={'40px'}
+                />
+              </Box>
+              <Box>
+                <Text lineHeight={1} textAlign={'left'} fontSize={'24px'} fontWeight={600} mb={4}>
+                  АСКОН
+                </Text>
+                <Text mb={3}>
+                  АСКОН — один из крупнейших российских разработчиков инженерного программного
+                  обеспечения и интеграторов в сфере автоматизации проектной и производственной
+                  деятельности. В 2020 году компания признана системообразующей организацией
+                  российской экономики. Входит в ТОП-100 крупнейших ИТ-компаний России и ТОП-20
+                  крупнейших поставщиков ИТ для промышленных предприятий.
+                </Text>
+                <Link href="https://loginom.ru/" isExternal>
+                  www.loginom.ru
+                </Link>
+              </Box>
+            </Stack>
+          </ListItem>
+          <ListItem>
+            <Stack direction={'row'} alignItems={'self-start'} mb={'20'}>
+              <Box minW={'40%'}>
+                <Img
+                  w={'200px'}
                   src="/media/images/landing/Loginom_Logo.png"
                   alt=""
                   marginLeft={'auto'}
