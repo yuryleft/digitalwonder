@@ -23,6 +23,7 @@ import allDataParser from 'src/home/helpers/allDataParser'
 import sameFields from 'src/home/helpers/sameFieldsProduct'
 import CompareBlock from './CompareBlock'
 import differentFieldsProduct from 'src/home/helpers/differentFieldsProduct'
+import delProduct from '../mutations/delProduct'
 
 const AllProductsPage = () => {
   const ITEMS_PER_PAGE = 30
@@ -54,6 +55,7 @@ const AllProductsPage = () => {
   const session = useSession()
   const role = session.role
   const [addProductMutation] = useMutation(addUpdateProduct)
+  const [delProductMutation] = useMutation(delProduct)
 
   const [allProducts, setAllProducts] = useState<IJSONProduct[]>(() =>
     allDataParser(products, groups, fields)
@@ -132,8 +134,9 @@ const AllProductsPage = () => {
   const tabsChange = async (type: IProductTypes) => {
     await setCurrnetTab(type)
   }
-  const onDelete = (product: IProduct) => {
-    console.log(product)
+  const onDelete = async (product: IProduct) => {
+    //console.log(product)
+    await delProductMutation({ id: product.id })
   }
 
   const compare = (product: IJSONProduct, flag: boolean) => {
